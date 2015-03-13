@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Log4EventHubTest", "Log4EventHubTest\Log4EventHubTest.csproj", "{CA32F923-7633-4E4D-B93B-36B09C16EA49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Log4EventHub", "Log4EventHub\Log4EventHub.csproj", "{A82F5CC0-2A29-4242-ACB9-4C172261E18E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA32F923-7633-4E4D-B93B-36B09C16EA49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA32F923-7633-4E4D-B93B-36B09C16EA49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA32F923-7633-4E4D-B93B-36B09C16EA49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA32F923-7633-4E4D-B93B-36B09C16EA49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A82F5CC0-2A29-4242-ACB9-4C172261E18E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A82F5CC0-2A29-4242-ACB9-4C172261E18E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A82F5CC0-2A29-4242-ACB9-4C172261E18E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A82F5CC0-2A29-4242-ACB9-4C172261E18E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
