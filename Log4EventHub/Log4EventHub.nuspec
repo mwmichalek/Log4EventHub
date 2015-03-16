@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0"?>
 <package>
   <metadata>
-    <id>Log4Netly</id>
+    <id>Log4EventHub</id>
     <version>0.1.0</version>
-    <title>Log4Netly</title>
-    <authors>Jonathan Freeland</authors>
-    <owners>Jonathan Freeland</owners>
+    <title>Log4EventHub</title>
+    <authors>Mark Michalek</authors>
+    <owners>Mark Michalek</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>(alpha) Azure Event Hub appender for log4net</description>
     <copyright>Copyright © 2015 Mark Michalek</copyright>
