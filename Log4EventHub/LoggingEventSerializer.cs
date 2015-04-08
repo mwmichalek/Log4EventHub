@@ -35,7 +35,7 @@ namespace Log4EventHub {
             payload.machine = Environment.MachineName;
             payload.process = _currentProcess.ProcessName;
             payload.thread = loggingEvent.ThreadName;
-            payload.message = loggingEvent.RenderedMessage;
+            payload.message = loggingEvent.MessageObject;
             payload.logger = loggingEvent.LoggerName;
             if (!string.IsNullOrEmpty(ApplicationName))
                 payload.application = ApplicationName;

@@ -36,6 +36,43 @@ namespace Log4EventHubTest
 
         }
 
+        [Fact]
+        public void LogInfo() {
+            Logger.Info("Holy crap, this worked: Info");
+            Assert.True(true);
+        }
+
+        [Fact]
+        public void LogError() {
+            Logger.Error("Holy crap, this worked: Error");
+            Assert.True(true);
+        }
+
+        [Fact]
+        public void LogObject() {
+
+            var serializedTestObject = JsonConvert.SerializeObject(new TestObject(), Formatting.None);
+
+            Logger.Error(serializedTestObject);
+            Assert.True(true);
+        }
+    }
+
+    public class TestObject {
+
+        public TestObject() {
+            Name = "Test";
+            Timestamp = DateTime.UtcNow;
+            Count = 5;
+        }
+
+        public string Name { get; set; }
+
+        public DateTime Timestamp { get; set; }
+
+        public int Count { get; set; }
+
+
     }
 
 }

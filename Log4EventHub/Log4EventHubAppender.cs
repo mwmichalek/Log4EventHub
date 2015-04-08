@@ -33,21 +33,33 @@ namespace Log4EventHub
 
         public override void ActivateOptions() 
         {
-            _eventHubClient = EventHubClient.CreateFromConnectionString(ConnectionString, EventHubName);
-            _serializer = new LoggingEventSerializer {
-                ApplicationName = ApplicationName
-            };
+            try {
+                _eventHubClient = EventHubClient.CreateFromConnectionString(ConnectionString, EventHubName);
+                _serializer = new LoggingEventSerializer {
+                    ApplicationName = ApplicationName
+                };
+            }
+            catch (Exception ex) {
+                Trace.TraceError("Unable to connect to EventHub.", ex);
+            }
         }
 
         protected override void Append(LoggingEvent loggingEvent) 
         {
-            var content = _serializer.SerializeLoggingEvents(new[] { loggingEvent });
+            try 
+            {
+                var content = _serializer.SerializeLoggingEvents(new[] { loggingEvent });
 
-            var eventData = new EventData(Encoding.UTF8.GetBytes(content)) {
-                PartitionKey = "0"
-            };
+                var eventData = new EventData(Encoding.UTF8.GetBytes(content)) {
+                    PartitionKey = "0"
+                };
 
-            _eventHubClient.SendAsync(eventData);
+                _eventHubClient.SendAsync(eventData);
+            }
+            catch (Exception ex) 
+            {
+                Trace.TraceError("Unable to send message to EventHub.", ex);
+            }
         }
     }
 }
