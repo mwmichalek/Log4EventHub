@@ -51,9 +51,9 @@ namespace Log4EventHubTest
         [Fact]
         public void LogObject() {
 
-            var serializedTestObject = JsonConvert.SerializeObject(new TestObject(), Formatting.None);
+            //var serializedTestObject = JsonConvert.SerializeObject(new TestObject(), Formatting.None);
 
-            Logger.Error(serializedTestObject);
+            Logger.Error(new TestObject());
             Assert.True(true);
         }
     }
