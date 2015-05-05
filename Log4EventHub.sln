@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Log4EventHubTest", "Log4Eve
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Log4EventHub", "Log4EventHub\Log4EventHub.csproj", "{A82F5CC0-2A29-4242-ACB9-4C172261E18E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Log4EventHub.Send.Console", "Test\Log4EventHub.Send.Console\Log4EventHub.Send.Console.csproj", "{137C9332-48F2-43C7-A8F1-391885B16EBE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A82F5CC0-2A29-4242-ACB9-4C172261E18E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A82F5CC0-2A29-4242-ACB9-4C172261E18E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A82F5CC0-2A29-4242-ACB9-4C172261E18E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{137C9332-48F2-43C7-A8F1-391885B16EBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{137C9332-48F2-43C7-A8F1-391885B16EBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{137C9332-48F2-43C7-A8F1-391885B16EBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{137C9332-48F2-43C7-A8F1-391885B16EBE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
